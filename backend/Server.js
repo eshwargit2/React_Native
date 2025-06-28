@@ -15,4 +15,4 @@ mongoose.connect('mongodb://127.0.0.1:27017/reactnativeauth', {
 
 app.use('/api/auth', authRoutes);
 
-app.listen(5000, () => console.log('Server running on http://localhost:5000'));
+app.listen(5000,'0.0.0.0' , () => console.log('Server running on http://0.0.0.0:5000'));
