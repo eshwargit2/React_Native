@@ -3,7 +3,6 @@ const router = express.Router();
 const User = require('../models/User');
 
 // Register
-// Register
 router.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
   try {
@@ -19,7 +18,7 @@ router.post('/register', async (req, res) => {
     return res.status(201).json({ message: 'User registered successfully' });
   } catch (err) {
     console.log("Backend error:", err);
-    return res.status(500).json({ message: 'Server error' }); // ✅ Use consistent message format
+    return res.status(500).json({ message: 'Server error' }); 
   }
 });
 

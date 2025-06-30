@@ -19,7 +19,7 @@ export default function Login() {
       await AsyncStorage.setItem('user', JSON.stringify(res.data.user));
       router.replace('dashboard');
     } catch (err) {
-      console.log("Login error:", JSON.stringify(err, null, 2)); // 🔍 full error log
+      console.log("Login error:", JSON.stringify(err, null, 2)); 
       Alert.alert('Error', err.response?.data?.message || 'Invalid credentials');
     }
   };
