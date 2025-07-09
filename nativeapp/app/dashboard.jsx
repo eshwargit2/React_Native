@@ -29,20 +29,7 @@ export default function Dashboard() {
       <SafeAreaView className="flex-1 bg-gray-100"></SafeAreaView>
         <ScrollView contentContainerStyle={{padding1:16}}>
             <View className="flex flex-row gap-4 flex-wrap">
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
-              <Product/>    
+              
          </View>
       </ScrollView>
     </View>
