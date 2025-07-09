@@ -24,13 +24,13 @@ export default function Dashboard() {
       </View>
 
       <View>
-        <Text className="text-2xl font-bold text-center mt-5">Home Automatio</Text>
+        <Text className="text-2xl font-bold text-center mt-5">Home AutomatioN</Text>
       </View>
       
       <SafeAreaView className="flex-1 bg-gray-100"></SafeAreaView>
         <ScrollView contentContainerStyle={{padding1:16}}>
             <View className="flex flex-row gap-4 flex-wrap">
-             <Button title="Wifi Car" onPress={() => router.push('wifiCar')} />
+             <Button title="Wifi Car" onPress={() => router.push('./wifiCar/WifiCar')} />
          </View>
       </ScrollView>
     </View>
