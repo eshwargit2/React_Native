@@ -2,6 +2,7 @@ import { View, Text, Button, Image, TouchableOpacity, ScrollView, SafeAreaView }
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
 import Product from './Product';
+import WifiCar from './wifiCar/WifiCar';
 
 
 export default function Dashboard() {
@@ -23,13 +24,13 @@ export default function Dashboard() {
       </View>
 
       <View>
-        <Text className="text-2xl font-bold text-center mt-5">Home Automation</Text>
+        <Text className="text-2xl font-bold text-center mt-5">Home Automatio</Text>
       </View>
       
       <SafeAreaView className="flex-1 bg-gray-100"></SafeAreaView>
         <ScrollView contentContainerStyle={{padding1:16}}>
             <View className="flex flex-row gap-4 flex-wrap">
-              
+             <Button title="Wifi Car" onPress={() => router.push('wifiCar')} />
          </View>
       </ScrollView>
     </View>
